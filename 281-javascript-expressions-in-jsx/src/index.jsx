@@ -7,7 +7,7 @@ const num = 6;
 
 ReactDOM.render(
     <div>
-        {/* Method 1 to combine 2 strings in JSX  */}
+        {/* Method 1 (Easiest Method) to combine 2 strings in JSX  */}
         {/* <h1>Hello {fname + " " + lname}!</h1> */}
 
         {/* Method 2 to combine 2 strings in JSX  */}
