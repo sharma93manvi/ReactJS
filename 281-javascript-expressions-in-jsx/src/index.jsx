@@ -7,7 +7,7 @@ const num = 6;
 ReactDOM.render(
     <div>
         <h1>Hello {name}!</h1>
-        <p>Your lucky number is {num}.</p>
+        <p>Your lucky number is {Math.floor(Math.random() * 10)}.</p>
     </div>, document.getElementById("root"));
 
 // If you're running this locally in VS Code use the commands:
