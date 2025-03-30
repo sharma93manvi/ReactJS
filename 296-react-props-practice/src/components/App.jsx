@@ -6,8 +6,8 @@ function App() {
       <h1 className="heading">My Contacts</h1>
       <div className="card">
         <div className="top">
-          <h2>Beyonce</h2>
-          <img
+          <h2 className="name">Beyonce</h2>
+          <img className="circle-img"
             src="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
             alt="avatar_img"
           />
