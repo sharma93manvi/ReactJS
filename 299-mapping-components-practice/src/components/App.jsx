@@ -1,4 +1,18 @@
 import React from "react";
+import Card from "./Card";
+import emojipedia from "../emojipedia";
+
+function createCard(details) {
+  return (
+    <Card 
+      id={details.id}
+      key={details.id}
+      name={details.name}
+      emoji={details.emoji}
+      meaning={details.meaning}
+    />
+  )
+}
 
 function App() {
   return (
@@ -8,7 +22,9 @@ function App() {
       </h1>
 
       <dl className="dictionary">
-        <div className="term">
+        
+        {emojipedia.map(createCard)}
+        {/* <div className="term">
           <dt>
             <span className="emoji" role="img" aria-label="Tense Biceps">
               💪
@@ -45,7 +61,7 @@ function App() {
             face is laughing boundlessly. The emoji version of “rofl“. Stands
             for „rolling on the floor, laughing“.
           </dd>
-        </div>
+        </div> */}
       </dl>
     </div>
   );
