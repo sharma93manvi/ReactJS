@@ -38,13 +38,13 @@ var numbers = [3, 56, 2, 48, 5];
 
 //Reduce - Accumulate a value by doing something to each item in an array.
 
-var newNumber = numbers.reduce(function(accumulator, currentNumber){
-    console.log("accumulator="+accumulator);
-    console.log("currentNumber="+currentNumber);
-    return accumulator+currentNumber;
-})
+// var newNumber = numbers.reduce(function(accumulator, currentNumber){
+//     console.log("accumulator="+accumulator);
+//     console.log("currentNumber="+currentNumber);
+//     return accumulator+currentNumber;
+// })
 
-console.log(newNumber);
+// console.log(newNumber);
 
 //-----for each - Reduce------
 // var newNumber = [];
@@ -52,7 +52,12 @@ console.log(newNumber);
 //     newNumber += currentNumber;
 // })
 // console.log(newNumber);
+
 //Find - find the first item that matches from an array.
+const newNumber = numbers.find(function(num){
+    return num >10;
+})
+console.log(newNumber);
 
 //FindIndex - find the index of the first item that matches.
 
