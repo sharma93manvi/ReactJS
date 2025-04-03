@@ -5,7 +5,6 @@ import emojipedia from "../emojipedia";
 function createCard(details) {
   return (
     <Card 
-      id={details.id}
       key={details.id}
       name={details.name}
       emoji={details.emoji}
