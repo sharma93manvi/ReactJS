@@ -1,14 +1,14 @@
 import React from "react";
 
-var isDone = true;
+var isDone = false;
 
-// function strike() {
-//   isDone = true;
-// }
+function strike() {
+  document.getElementById("root").style.textDecoration = "line-through";
+}
 
-// function unStrike() {
-//   isDone = false;
-// }
+function unStrike() {
+  document.getElementById("root").style.textDecoration = null;
+}
 
 function App() {
   return  <p> Buy Milk </p>;
