@@ -4,20 +4,11 @@ import Header from "./Header";
 
 var isLoggedIn = false;
 
-function renderConditionally(){
-  if(isLoggedIn){
-    return <Header />;
-  }else{
-    return <Login />;
-  }
-
-}
-
-
 function App() {
   return (
-    <div className="container">
-      {renderConditionally()}
+    <div className="container">{
+      isLoggedIn === true ? <Header /> : <Login />  
+    } 
     </div>
   );
 }
