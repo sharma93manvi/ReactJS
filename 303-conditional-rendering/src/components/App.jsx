@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="container">{
       // isLoggedIn === true ? <Header /> : <Login />  
-      currentTime > 12 ? <h1> Why are you still working? </h1> : null
+      currentTime > 12 && <h1> Why are you still working? </h1> 
     } 
     </div>
   );
