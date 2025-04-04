@@ -1,4 +1,10 @@
-var numbers = [3, 56, 2, 48, 5];
+import emojipedia from "./emojipedia";
+
+var newMeanings = emojipedia.map(function(entry){
+    return entry.meaning.substring(0,100);
+});
+
+console.log(newMeanings);
 
 //-----Map -Create a new array by doing something with each item in an array.
 // function double(x){
@@ -60,7 +66,7 @@ var numbers = [3, 56, 2, 48, 5];
 // console.log(newNumber);
 
 //FindIndex - find the index of the first item that matches.
-const newNumber = numbers.findIndex(function(num){
-    return num >10;
-})
-console.log(newNumber);
+// const newNumber = numbers.findIndex(function(num){
+//     return num >10;
+// })
+// console.log(newNumber);
