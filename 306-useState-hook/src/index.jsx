@@ -4,7 +4,8 @@ import ReactDOM from "react-dom";
 var count = 0;
 
 function increase() {
-  console.log("I got clicked!");
+  count++;
+  console.log(count);
 }
 
 ReactDOM.render(
