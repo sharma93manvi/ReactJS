@@ -7,6 +7,10 @@ function App() {
     // const [red, green, blue] = [9, 132, 227]
     // console.log(blue);
 
+    function decrease() {
+      setCount(count-1);
+    }
+
     function increase() {
       // count++;
       setCount(count+1);
@@ -15,6 +19,7 @@ function App() {
     return(
       <div className="container">
         <h1>{count}</h1>
+        <button onClick={decrease}>-</button>
         <button onClick={increase}>+</button>
       </div>
     );
