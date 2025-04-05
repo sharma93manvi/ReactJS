@@ -1,19 +1,20 @@
 import React, {useState} from "react";
 
 function App() {
-    const state =  useState(123);
+    const [count, setCount] =  useState(123);
 
     //Destructuring Example
-    const [red, green, blue] = [9, 132, 227]
-    console.log(blue);
+    // const [red, green, blue] = [9, 132, 227]
+    // console.log(blue);
 
     function increase() {
       // count++;
+      setCount(12)
     }
 
     return(
       <div className="container">
-        <h1>{state[0]}</h1>
+        <h1>{count}</h1>
         <button onClick={increase}>+</button>
       </div>
     );
