@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 function App() {
-    const [count, setCount] =  useState(123);
+    const [count, setCount] =  useState(0);
 
     //Destructuring Example
     // const [red, green, blue] = [9, 132, 227]
@@ -9,7 +9,7 @@ function App() {
 
     function increase() {
       // count++;
-      setCount(12)
+      setCount(count+1);
     }
 
     return(
