@@ -7,16 +7,18 @@ function App() {
   const [name, setName] = useState("");
   const [header, setHeader] = useState("");
 
-  function handleChange() {
+  function handleChange(event) {
     // console.log(event.target.placeholder);
     // console.log(event.target.type);
     // console.log(event.target.value);
     setName(event.target.value);
   }
 
-  function handleSubmit() {
+  function handleSubmit(event) {
     console.log("Submitted!");
     setHeader(name);
+
+    event.preventDefault();
   }
 
   return (
